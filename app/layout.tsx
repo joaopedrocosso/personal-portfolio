@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={poppins.className}>
         {children}
-        <div className="bg-[#011627] fixed top-0 -z-10 h-full w-full">
+        <div className="bg-blue-3 fixed top-0 -z-10 h-full w-full">
         </div>
       </body>
     </html>

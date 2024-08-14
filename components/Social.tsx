@@ -10,7 +10,7 @@ interface SocialProps {
 const Social = ({ href, text, icon }: SocialProps) => {
   return (
     <Link href={href} legacyBehavior>
-        <a target="_blank" className="flex flex-row items-center gap-2 hover:text-[#E6E5F3] transition-all">
+        <a target="_blank" className="flex flex-row items-center gap-2 hover:text-white-1 transition-all">
             {icon}
             <span className="text-sm">
                 {text}

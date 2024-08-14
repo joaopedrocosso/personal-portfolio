@@ -30,17 +30,17 @@ const Projects = () => {
                                 <Image src={project.image} width={115} height={115} className="mb-6 rounded border border-[#3A3A3A]" alt={project.title} />
                             </div>
 
-                            <div className="w-full max-w-xl lg:w-3/4 text-[#E6E5F3] hover:text-[#4d4af9] transition-all">
+                            <div className="w-full max-w-xl lg:w-3/4 text-white-1 hover:text-blue-1 transition-all">
                                 <h6 className="mb-2 font-semibold">
                                     {project.title}
                                 </h6>
 
-                                <p className="mb-4 text-sm text-[#AAAAC4] leading-relaxed">
+                                <p className="mb-4 text-sm text-white-2 leading-relaxed">
                                     {project.description}
                                 </p>
 
                                 {project.technologies.map((tech, index) => (
-                                    <span key={index} className="mr-2 rounded bg-[#12113b] px-2 py-1 text-sm font-semibold text-[#4d4af9]">
+                                    <span key={index} className="mr-2 rounded bg-blue-2 px-2 py-1 text-sm font-semibold text-blue-1">
                                         {tech}
                                     </span>
                                 ))}
