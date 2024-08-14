@@ -8,48 +8,44 @@ import { MdEmail } from 'react-icons/md'
 
 const SideProfile = () => {
   return (
-    <section 
-        className='flex justify-start lg:items-center lg:pb-4 lg:sticky lg:top-0 lg:h-screen lg:h-screen lg:overflow-y-hidden lg:mb-35'
+    <section
+        className='flex flex-wrap'
     >
         <div
-            className='flex flex-wrap'
+            className='w-full lg:w-1/8'
         >
             <div
-                className='w-full lg:w-1/8'
+                className='flex flex-col items-start'
             >
+                <Heading />
+
+                <PortfolioNav />
+
                 <div
-                    className='flex flex-col items-start'
+                    className='flex flex-col items-start justify-start gap-4 text-xl text-white-2'
                 >
-                    <Heading />
+                    <Social 
+                        href={`mailto:${CONTACT.email}`}
+                        text={CONTACT.email}
+                        icon={<MdEmail />}
+                    />
 
-                    <PortfolioNav />
+                    <Social 
+                        href='https://github.com/joaopedrocosso/'
+                        text='github.com/joaopedrocosso/'
+                        icon={<FaGithub />}
+                    />
 
-                    <div
-                        className='flex flex-col items-start justify-start gap-4 text-xl text-white-2'
-                    >
-                        <Social 
-                            href={`mailto:${CONTACT.email}`}
-                            text={CONTACT.email}
-                            icon={<MdEmail />}
-                        />
-
-                        <Social 
-                            href='https://github.com/joaopedrocosso/'
-                            text='github.com/joaopedrocosso/'
-                            icon={<FaGithub />}
-                        />
-
-                        <Social 
-                            href='https://www.linkedin.com/in/joaopedrocosso/'
-                            text='/in/joaopedrocosso/'
-                            icon={<FaLinkedin />}
-                        />
-                    </div>
-
+                    <Social 
+                        href='https://www.linkedin.com/in/joaopedrocosso/'
+                        text='/in/joaopedrocosso/'
+                        icon={<FaLinkedin />}
+                    />
                 </div>
+
             </div>
-        </div>  
-    </section>
+        </div>
+    </section>  
   )
 }
 
