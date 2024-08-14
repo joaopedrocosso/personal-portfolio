@@ -26,6 +26,13 @@ const PortfolioNav: React.FC<PortfolioNavProps> = ({ activeSection, handleScroll
       >
         PROJECTS
       </button>
+
+      <button
+        onClick={() => handleScroll('tech-stack')}
+        className={`transition-all ${activeSection === 'tech-stack' ? 'text-white-1' : 'hover:text-white-1'}`}
+      >
+        TECH STACK
+      </button>
     </nav>
   );
 };

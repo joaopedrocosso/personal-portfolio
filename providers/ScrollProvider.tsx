@@ -23,7 +23,7 @@ export const ScrollProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   };
 
   const handleScrollEvents = () => {
-    const sections = ['about', 'experience', 'projects', 'knowledge'];
+    const sections = ['about', 'experience', 'projects', 'tech-stack'];
     let found = '';
 
     for (const section of sections) {

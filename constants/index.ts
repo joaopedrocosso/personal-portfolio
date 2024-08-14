@@ -79,6 +79,29 @@ export const PROJECTS = [
   },
 ];
 
+
+export const TECHSTACK = [
+  {
+    title: "Front-End",
+    description:
+      "I build incredible interfaces with the most widely used technologies on the market.",
+    technologies: ["HTML5", "CSS3", "JS", "TS", "React", "Next.js", "Tailwind CSS", "Sass"],
+  },
+  {
+    title: "Back-End",
+    description:
+      "I create optimized servers with high-performance tools.",
+    technologies: ["Node.js", "Express", "Django"],
+  },
+  {
+    title: "DataBases",
+    image: polaroidSeBanner,
+    description:
+      "I integrate applications into databases seeking high project scalability.",
+    technologies: ["MongoDB", "My SQL", "SQL Server", "Redis", "Supabase"],
+  },
+];
+
 export const CONTACT = {
   email: "contact@joaopedrocosso.com",
 };
