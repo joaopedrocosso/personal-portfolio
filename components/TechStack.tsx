@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Knowledge = () => {
   return (
     <div id="tech-stack" className="mb-20">
-        <h1 className="mt-20 mb-8 w-full p-4 text-start font-bold text-xl text-white-1">
+        <h1 className="mt-10 lg:mt-20 mb-8 w-full p-4 text-start font-bold text-xl text-white-1">
             Tech Stack
         </h1> 
 

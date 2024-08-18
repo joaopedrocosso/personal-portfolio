@@ -19,15 +19,14 @@ const SideProfile = () => {
                 className='w-full lg:w-1/8'
             >
                 <div
-                    className='flex flex-col items-start'
+                    className='flex flex-col h-screen items-start justify-between py-20'
                 >
+
                     <Heading />
 
                     <PortfolioNav activeSection={activeSection} handleScroll={handleScroll} />
 
-                    <div
-                        className='flex flex-col items-start justify-start gap-4 text-xl text-white-2'
-                    >
+                    <div className='flex mb-10 lg:mb-0 lg:flex-col items-start justify-start gap-4 text-white-2'>
                         <Social 
                             href={`mailto:${CONTACT.email}`}
                             text={CONTACT.email}

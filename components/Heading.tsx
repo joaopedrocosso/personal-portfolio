@@ -5,7 +5,7 @@ const Heading = () => {
   return (
     <section>
         <h1
-            className='text-3xl lg:text-5xl text-white-1 py-2 font-bold tracking-tight'
+            className='text-4xl lg:text-5xl text-white-1 py-2 font-bold tracking-tight'
         >
             João Pedro Cosso
         </h1>
@@ -17,7 +17,7 @@ const Heading = () => {
         </span>
 
         <p
-            className='text-sm lg:text-base mt-4 max-w-xs lg:max-w-80 text-white-2'
+            className='text-base lg:text-base mt-4 max-w-xs lg:max-w-80 text-white-2'
         >
             {HERO_CONTENT}
         </p>
