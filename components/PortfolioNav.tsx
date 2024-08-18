@@ -7,7 +7,7 @@ interface PortfolioNavProps {
 
 const PortfolioNav: React.FC<PortfolioNavProps> = ({ activeSection, handleScroll }) => {
   return (
-    <nav className="flex flex-col text-white-2 tracking-wide justify-start items-start gap-4 py-16 font-bold text-sm">
+    <nav className="lg:flex hidden lg:flex-col text-white-2 tracking-wide items-start gap-4 py-16 font-bold text-sm">
       <button
         onClick={() => handleScroll('about')}
         className={`transition-all ${activeSection === 'about' ? 'text-white-1' : 'hover:text-white-1'}`}

@@ -9,7 +9,7 @@ const safeLink = (link?: string) => link ?? "#";
 const Experience = () => {
   return (
     <div id="experience" className="pb-4">
-        <div className="mt-20 mb-8 flex flex-row justify-between items-center w-full p-4">
+        <div className="mt-10 lg:mt-20 mb-8 flex flex-row justify-between items-center w-full p-4">
             <h1 className="text-start font-bold text-xl text-white-1">
                 Experience
             </h1>
