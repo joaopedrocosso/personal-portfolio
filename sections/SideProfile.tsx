@@ -7,6 +7,7 @@ import { useScroll } from '@/providers/ScrollProvider'
 import React from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
+import { motion } from 'framer-motion'
 
 const SideProfile = () => {
     const { handleScroll, activeSection } = useScroll();
@@ -19,7 +20,12 @@ const SideProfile = () => {
                 <PortfolioNav activeSection={activeSection} handleScroll={handleScroll} />
             </div>
 
-            <div className='flex mb-10 lg:mb-0 lg:flex-col items-start  gap-4 text-white-2'>
+            <motion.div 
+                className='flex mb-10 lg:mb-0 lg:flex-col items-start  gap-4 text-white-2'
+                initial={{opacity: 0}}
+                animate={{opacity: 1}}
+                transition={{duration: 0.5, delay: 0.4}}
+            >
                 <Social 
                     href={`mailto:${CONTACT.email}`}
                     text={CONTACT.email}
@@ -37,7 +43,7 @@ const SideProfile = () => {
                     text='/in/joaopedrocosso/'
                     icon={<FaLinkedin />}
                 />
-            </div>
+            </motion.div>
         </>
     )
 }

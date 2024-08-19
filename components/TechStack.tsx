@@ -1,10 +1,17 @@
+"use client"
 import React from 'react'
 import { TECHSTACK } from '@/constants'
-import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 const Knowledge = () => {
   return (
-    <div id="tech-stack" className="mb-20">
+    <motion.div 
+        id="tech-stack" 
+        className="mb-20"
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        transition={{duration: 0.5, delay: 0.8}}
+    >
         <h1 className="mt-10 lg:mt-20 mb-8 w-full p-4 text-start tracking-widest font-semibold text-md text-white-1">
             TECH STACK
         </h1> 
@@ -32,7 +39,7 @@ const Knowledge = () => {
               </div>
             ))}
         </div>
-    </div>
+    </motion.div>
   )
 }
 

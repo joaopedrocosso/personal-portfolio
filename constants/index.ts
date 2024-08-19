@@ -3,8 +3,6 @@ import polaroidSeBanner from "../assets/projects/polaroidSeBanner.webp";
 import zoomCloneBanner from "../assets/projects/zoomCloneBanner.webp";
 import personalWebsiteBanner from "../assets/projects/personalWebsiteBanner.webp";
 
-export const HERO_CONTENT = `Transforming the future of web development.`;
-
 export const EXPERIENCES = [
   {
     year: "2024 - Present",

@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 interface PortfolioNavProps {
   activeSection: string;
@@ -7,10 +8,16 @@ interface PortfolioNavProps {
 
 const PortfolioNav: React.FC<PortfolioNavProps> = ({ activeSection, handleScroll }) => {
   return (
-    <nav className="lg:flex hidden lg:flex-col text-white-2 tracking-wide items-start gap-4 py-16 font-bold text-sm">
+    <motion.nav 
+      className="lg:flex hidden lg:flex-col text-white-2 tracking-wide items-start gap-4 py-16 font-bold text-sm"
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      transition={{duration: 0.5, delay: 0.3}}
+    >
       <button
         onClick={() => handleScroll('about')}
         className={`transition-all ${activeSection === 'about' ? 'text-white-1' : 'hover:text-white-1'}`}
+        
       >
         ABOUT
       </button>
@@ -33,7 +40,7 @@ const PortfolioNav: React.FC<PortfolioNavProps> = ({ activeSection, handleScroll
       >
         TECH STACK
       </button>
-    </nav>
+    </motion.nav>
   );
 };
 

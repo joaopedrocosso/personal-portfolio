@@ -47,6 +47,10 @@ const config = {
           1: '#4d4af9',
           2: '#12113b',
           3: '#0F172A'
+        },
+        white: {
+          1: '#E6E5F3',
+          2: '#AAAAC4'
         }
       },
       borderColor:{

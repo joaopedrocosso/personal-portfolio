@@ -1,14 +1,22 @@
+"use client"
 import { EXPERIENCES } from '@/constants'
 import Link from 'next/link'
 import React from 'react'
 import Button from './Button';
 import { LiaExternalLinkAltSolid } from 'react-icons/lia';
+import { motion } from 'framer-motion';
 
 const safeLink = (link?: string) => link ?? "#";
 
 const Experience = () => {
   return (
-    <div id="experience" className="pb-4">
+    <motion.div 
+        id="experience" 
+        className="pb-4"
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        transition={{duration: 0.5, delay: 0.6}}
+    >
         <div className="mt-10 lg:mt-20 mb-8 flex flex-row justify-between items-center w-full p-4">
             <h1 className="text-start tracking-widest font-semibold text-md text-white-1">
                 EXPERIENCE
@@ -52,7 +60,7 @@ const Experience = () => {
                 </Link>
             ))}
         </div> 
-    </div> 
+    </motion.div> 
   )
 }
 
