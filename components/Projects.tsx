@@ -31,9 +31,9 @@ const Projects = () => {
         </div>
         <div>
             {PROJECTS.map((project, index) => (
-                <Link href={safeLink(project.link)} legacyBehavior>
+                <Link key={index} href={safeLink(project.link)} legacyBehavior>
                     <a target="_blank">
-                        <div key={index} className="mb-8 flex flex-wrap lg:justify-center p-4 hover:bg-[#302f4634] rounded transition-all cursor-pointer">
+                        <div className="mb-8 flex flex-wrap lg:justify-center p-4 hover:bg-[#302f4634] rounded transition-all cursor-pointer">
                             <div className="w-full lg:w-1/4">
                                 <Image src={project.image} width={115} height={115} className="mb-6 rounded border border-[#3A3A3A]" alt={project.title} />
                             </div>

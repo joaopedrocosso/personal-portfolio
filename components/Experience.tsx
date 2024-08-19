@@ -31,9 +31,9 @@ const Experience = () => {
 
         <div>
             {EXPERIENCES.map((experience, index) => (
-                <Link href={safeLink(experience.link)} legacyBehavior>
+                <Link key={index} href={safeLink(experience.link)} legacyBehavior>
                     <a target="_blank" >
-                        <div key={index} className="mb-8 flex flex-wrap lg:justify-center p-4 hover:bg-[#302f4634] rounded transition-all cursor-pointer">
+                        <div className="mb-8 flex flex-wrap lg:justify-center p-4 hover:bg-[#302f4634] rounded transition-all cursor-pointer">
                             <div className="w-full lg:w-1/4">
                                 <p className="mb-2 text-sm text-white-2">{experience.year}</p>
                             </div>

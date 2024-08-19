@@ -7,7 +7,7 @@ const Knowledge = () => {
   return (
     <motion.div 
         id="tech-stack" 
-        className="mb-20"
+        className="mb-10"
         initial={{opacity: 0}}
         animate={{opacity: 1}}
         transition={{duration: 0.5, delay: 0.8}}
