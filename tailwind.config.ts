@@ -10,6 +10,15 @@ const config = {
 	],
   prefix: "",
   theme: {
+    letterSpacing: {
+      tightest: '-.075em',
+      tighter: '-.05em',
+      tight: '-.025em',
+      normal: '0',
+      wide: '.025em',
+      wider: '.05em',
+      widest: '.1em',
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -37,7 +46,7 @@ const config = {
         blue: {
           1: '#4d4af9',
           2: '#12113b',
-          3: '#011627'
+          3: '#0F172A'
         }
       },
       borderColor:{

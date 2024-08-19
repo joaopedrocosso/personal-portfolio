@@ -11,12 +11,12 @@ const Projects = () => {
   return (
     <div id="projects" className="pb-4">
         <div className="mt-10 lg:mt-20 mb-8 flex flex-row justify-between items-center w-full p-4">
-            <h1 className="text-start font-bold text-xl text-white-1">
-                Projects
+            <h1 className="text-start tracking-widest font-semibold text-md text-white-1">
+                PROJECTS
             </h1>
 
             <Button 
-                href=''
+                href='https://github.com/joaopedrocosso'
                 text='View all the Projects'
                 icon={<LiaExternalLinkAltSolid />}
             />
@@ -30,7 +30,7 @@ const Projects = () => {
                                 <Image src={project.image} width={115} height={115} className="mb-6 rounded border border-[#3A3A3A]" alt={project.title} />
                             </div>
 
-                            <div className="w-full max-w-xl lg:w-3/4 text-white-1 hover:text-blue-1 transition-all">
+                            <div className="w-full lg:w-3/4 text-white-1 hover:text-blue-1 transition-all">
                                 <h6 className="mb-2 font-semibold">
                                     {project.title}
                                 </h6>

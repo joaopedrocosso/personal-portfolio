@@ -10,12 +10,12 @@ const Experience = () => {
   return (
     <div id="experience" className="pb-4">
         <div className="mt-10 lg:mt-20 mb-8 flex flex-row justify-between items-center w-full p-4">
-            <h1 className="text-start font-bold text-xl text-white-1">
-                Experience
+            <h1 className="text-start tracking-widest font-semibold text-md text-white-1">
+                EXPERIENCE
             </h1>
 
             <Button 
-                href=''
+                href='https://www.linkedin.com/in/joaopedrocosso/'
                 text='View Full Resume'
                 icon={<LiaExternalLinkAltSolid />}
             />
@@ -30,7 +30,7 @@ const Experience = () => {
                                 <p className="mb-2 text-sm text-white-2">{experience.year}</p>
                             </div>
 
-                            <div className="w-full max-w-xl lg:w-3/4 text-white-1 hover:text-blue-1 transition-all">
+                            <div className="w-full w-full lg:w-3/4 text-white-1 hover:text-blue-1 transition-all">
                                 <h6 className="mb-2 font-semibold">
                                     {experience.role} - {" "} {experience.company}
                                 </h6>

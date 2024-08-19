@@ -12,44 +12,34 @@ const SideProfile = () => {
     const { handleScroll, activeSection } = useScroll();
 
     return (
-        <section
-            className='flex flex-wrap'
-        >
-            <div
-                className='w-full lg:w-1/8'
-            >
-                <div
-                    className='flex flex-col h-screen items-start justify-between py-20'
-                >
+        <>
+            <div>
+                <Heading />
 
-                    <Heading />
-
-                    <PortfolioNav activeSection={activeSection} handleScroll={handleScroll} />
-
-                    <div className='flex mb-10 lg:mb-0 lg:flex-col items-start justify-start gap-4 text-white-2'>
-                        <Social 
-                            href={`mailto:${CONTACT.email}`}
-                            text={CONTACT.email}
-                            icon={<MdEmail />}
-                        />
-
-                        <Social 
-                            href='https://github.com/joaopedrocosso/'
-                            text='github.com/joaopedrocosso/'
-                            icon={<FaGithub />}
-                        />
-
-                        <Social 
-                            href='https://www.linkedin.com/in/joaopedrocosso/'
-                            text='/in/joaopedrocosso/'
-                            icon={<FaLinkedin />}
-                        />
-                    </div>
-
-                </div>
+                <PortfolioNav activeSection={activeSection} handleScroll={handleScroll} />
             </div>
-        </section>  
-  )
+
+            <div className='flex mb-10 lg:mb-0 lg:flex-col items-start  gap-4 text-white-2'>
+                <Social 
+                    href={`mailto:${CONTACT.email}`}
+                    text={CONTACT.email}
+                    icon={<MdEmail />}
+                />
+
+                <Social 
+                    href='https://github.com/joaopedrocosso/'
+                    text='github.com/joaopedrocosso/'
+                    icon={<FaGithub />}
+                />
+
+                <Social 
+                    href='https://www.linkedin.com/in/joaopedrocosso/'
+                    text='/in/joaopedrocosso/'
+                    icon={<FaLinkedin />}
+                />
+            </div>
+        </>
+    )
 }
 
 export default SideProfile

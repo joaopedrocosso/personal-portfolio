@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Oxanium } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const oxanium = Oxanium({
+const poppins = Poppins({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700", "800"],
 });
@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={oxanium.className}>
+      <body className={poppins.className}>
         {children}
         <div className="bg-blue-3 fixed top-0 -z-10 h-full w-full">
         </div>

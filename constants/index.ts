@@ -5,10 +5,6 @@ import personalWebsiteBanner from "../assets/projects/personalWebsiteBanner.webp
 
 export const HERO_CONTENT = `Transforming the future of web development.`;
 
-export const ABOUT_TEXT = `My journey in development began with a curiosity about how things work, evolving into a career that forces me to learn and adapt continuously. During this time, I've worked on projects ranging from embedded systems for rockets to full-stack applications ready to be launched.`;
-export const ABOUT_TEXT_2 = `Currently, my focus is on building web applications with a design and business logic that meet any type of demand, reflecting a careful analysis of requirements so that everything is done the way it should be. In my spare time, I also create programming content and interact on forums to help other developers.`;
-export const ABOUT_TEXT_3 = `When I'm not coding, I'm usually playing tennis, going to the gym, hanging out with my girlfriend or with my family and a dog who knows how to smile to order snacks.`
-
 export const EXPERIENCES = [
   {
     year: "2024 - Present",
